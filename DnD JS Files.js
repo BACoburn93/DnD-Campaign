@@ -44,7 +44,7 @@ function randomEncGenerator(id) {
                     console.log('Summon 1d4 Vampires');
                 }
             }
-        }, 5000)
+        }, 1800000)
     }
     return rollDie = setInterval(() => {
         const randomNumber = Math.floor(Math.random() * 12) + 1; {
@@ -89,7 +89,7 @@ function randomEncGenerator(id) {
 }
 
 
-
+//Used to determine the success of a Skill Check automatically succeeding. The difficulty is generally determined by how unrealistic the skill check is.
 function skillCrit(difficulty) {
 
     if (difficulty === 1) {
